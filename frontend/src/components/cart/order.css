@@ -1,0 +1,31 @@
+.emptyCart {
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .emptyCart > h1 {    
+    font-size: 2vmax;
+    margin: 0.5vmax;
+    color: rgb(35, 39, 37);
+  }
+  .emptyCart > h3 {
+    font-size: 2vmax;
+    margin: 0.5vmax;
+    color: rgb(35, 39, 37);
+  }
+  .emptyCart > a {
+    background-color: var(--green);
+    color: white;
+    margin: 0.5vmax;
+    border: none;
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+    font: 400 1vmax "Roboto";
+    text-decoration: none;
+  }

@@ -1,0 +1,473 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    padding-top: 9rem;
+    height: 35rem;
+}
+
+.content{
+    padding-left: 0.7rem;
+    width: 50%;
+}
+
+.image{
+    transform: scale(0.8);
+}
+
+.image img{
+    width: 100%;
+}
+
+.content span{
+    color:var(--green);
+    font-size: 2rem;
+}
+
+ .content h3{
+    color:var(--black);
+    font-size: 5rem;
+}
+
+ .content p{
+    color:var(--light-color);
+    font-size: 2rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+    width: 100%;
+}
+
+
+/* right side */
+.w-right {
+    position: relative;
+    transform: scale(1.5);
+  }
+  
+  .w-mainCircle {
+    left: 9rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: white;
+    /* darkMode */
+    z-index: 2;
+  }
+  .w-mainCircle > * {
+    position: absolute;
+  }
+  .w-mainCircle > :nth-child(1) {
+    top: -3rem;
+    left: 6rem;
+  }
+  .w-mainCircle > :nth-child(2) {
+    left: -3rem;
+    top: 5rem;
+  }
+  .w-mainCircle > :nth-child(3) {
+    left: 6rem;
+    top: 5rem;
+  }
+  .w-mainCircle > :nth-child(4) {
+    left: 15rem;
+    top: 5rem;
+  }
+  .w-mainCircle > :nth-child(5) {
+    left: 6rem;
+    top: 13rem;
+  }
+  .w-secCircle {
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: "none";
+    box-shadow: var(--smboxShadow);
+    background: white;
+  }
+  
+  .w-secCircle > img {
+    transform: scale(1);
+  }
+  
+  .w-backCircle {
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    /* darkMode */
+    z-index: 1;
+  }
+  .blueCircle {
+    background: #1949b8;
+    left: 18rem;
+    top: 0rem;
+  }
+  .yellowCircle {
+    background: #f5c32c;
+    left: 18rem;
+    top: 8rem;
+  }
+
+  .swiper-pagination {
+    
+    bottom: -10px !important;
+    color: solid rgb(255, 255, 255)  !important;
+    background-color: black;
+    height: 2000px;
+    
+}
+.h-slide{
+  position: relative;
+}
+.h-bg{
+  position: absolute;
+  top: 0px;
+  height: 12rem;
+ z-index: -1;
+}
+.h-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 16rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.h-container .card{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 6rem;
+  width: 17rem; 
+  margin: 1rem;
+  background-color: rgba(222, 247, 224, 0.953);
+  box-shadow: 2px 2px 2px 2px var(--green);
+}
+
+.card > :nth-child(1) 
+{
+  transform: scale(1.2);
+  margin: 1rem;
+}
+.card > :nth-child(2) 
+{
+ margin: 1rem;
+}
+
+
+.s-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.s-container .disc-box
+{   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+
+}
+.s-container .disc-box > h3{
+    color: var(--green);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.s-container .disc-box > h1{
+    color: var(--black);
+    font-size: 2.2rem;
+    margin-top: 0.5rem;
+}
+.s-container .disc-box  h1 > span{
+    color: var(--green);
+}
+.s-container .disc-box  p{
+    font: 1rem;
+    margin-top: 0.5rem;
+}
+
+.s-container .services-box{
+  display: flex;
+  width: 100%;
+  height: 17rem;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.s-container .services-box .box{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.s-container .services-box .box>:nth-child(1){
+  width: 9rem;
+  height: 9rem;
+  color: var(--green);
+  
+}
+.s-container .services-box .box>:nth-child(2){
+  font-size: 1.2rem;
+  color: var(--black);
+}
+
+
+/* Dishes section  */
+.popular{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.popular h1{
+  color: var(--black);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.popular .bar{
+  background: var(--green);
+  width: 100%;
+  height: 3rem;
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+}
+.popular .bar button{
+       font-size: 1.2rem;
+       padding: 0.5rem;
+       margin-left: 2rem;
+       background-color: var(--green);
+}
+.popular .bar button:hover{
+       background-color: rgb(242, 238, 238);
+       border: rgb(7, 7, 7) solid 2px;
+       border-radius: 8px;
+
+}
+
+  .popular .box {
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 0.3rem;
+}
+
+
+.popular .fa-heart,
+.popular .fa-eye{
+  position: absolute;
+  top:1.5rem;
+  background:#eee;
+  border-radius: 50%;
+  height: 5rem;
+  width:5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color:var(--black);
+}
+
+.popular .box .fa-heart:hover,
+.popular .box .fa-eye:hover{
+  background: var(--green);
+  color:#fff;
+}
+
+.popular .box .fa-heart{
+  right:-15rem;
+}
+
+.popular .box .fa-eye{
+  left:-15rem;
+}
+
+.popular .box:hover .fa-heart{
+  right:1.5rem;
+}
+
+.popular .box:hover .fa-eye{
+  left:1.5rem;
+}
+
+.popular .box img {
+  height: 12rem;
+  margin: 1rem 0;
+}
+.popular .box .btn{
+    margin-top: 0rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+
+}
+
+.popular .box h3{
+  color:var(--black);
+  font-size: 2.5rem;
+}
+
+.popular .box .stars{
+  padding:1rem 0;
+}
+
+.popular .box .stars i{
+  font-size: 1.7rem;
+  color:var(--green);
+}
+
+.popular .box span{
+  color:var(--green);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+
+.popular .products{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+
+.foodBtnActive{
+  background-color: rgb(242, 238, 238);
+  border: rgb(7, 7, 7) solid 2px;
+  border-radius: 8px;  
+}
+
+
+/* Why us */
+.whyUs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.whyUs .whyUSImg{
+    width: 100rem;
+    height: 25rem;
+}
+
+.whyUs .right .whyusHeading{
+  color: var(--black);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.whyUs .right .whyusHeading > span{
+  color: var(--green);
+
+}
+.whyUs .right .choose__us-desc{
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+.whyUs .right .choose__us-title{
+  color: var(--green);
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+
+}
+
+/* testimonials */
+.testimonialh1{
+  font-size: 2rem;
+  color: var(--green);
+  margin: 0;
+}
+.testimialContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.testimialContainer > .left{
+ width: 50%;
+ margin: 0.3rem;
+}
+.testimialContainer > .left > h1{
+  color: var(--black);
+  font-size: 2rem;
+  margin-bottom: 1rem;   
+}
+.testimialContainer > .left > p{
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;  
+}
+.Testimonialcard{
+  width: 100%;
+  box-shadow: rgba(22, 110, 70, 0.25) 0px 50px 100px -20px, rgba(20, 123, 83, 0.3) 0px 30px 60px -30px, rgba(24, 144, 56, 0.35) 0px -2px 6px 0px inset;
+}
+   
+.Testimonialcard > .imgSection{
+   display: flex;
+   margin: 1rem;
+   align-items: center;
+}
+.Testimonialcard > p{
+   margin: 2rem;
+}
+.Testimonialcard > .imgSection > img{
+   width: 6rem;
+   margin: 1rem;
+   border-radius: 50%;
+}
+  .Testimonialcard > .imgSection > p{
+    color: var(--green);
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+.testimialContainer > .right >img{
+      width: 70%;
+      margin-left: 3rem;
+}
+
+@media (max-width:768px){
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    height: 35rem;
+}
+
+}
+
+
